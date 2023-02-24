@@ -1,0 +1,21 @@
+.container {
+  display: block;
+  background-color: rgb(237, 255, 207);
+  border-radius: 15px;
+  min-height: 500px;
+  margin-left: 10%;
+  margin-top: 15px;
+  width: 80%;
+  text-align: center;
+  line-height: 15px;
+
+  -webkit-box-shadow: 6px 6px 5px 0px rgb(207, 88, 3);
+  -moz-box-shadow: 6px 6px 5px 0px rgb(207, 88, 3);
+  box-shadow: 6px 6px 5px 0px rgb(207, 88, 3);
+}
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/

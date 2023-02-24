@@ -1,0 +1,30 @@
+<p-card>
+    <ng-template pTemplate="header">
+    <h3>
+      <br>
+       <h3>
+        <a
+          [title]="producto.name + ' details'"
+          [routerLink]="['/products', producto.id]">
+          {{ producto.name }}
+
+
+        </a>
+        <button type="button" (click)="showDialog()" icon="pi pi-info-circle"label="Mostrar"></button>
+      </h3>
+    </h3>
+    </ng-template>
+     <p *ngIf="producto.description">Descripción: {{ 
+      producto.description }}</p>
+    <button type="button" (click)="compartir()">Compartir</button>
+    <br>
+    <br>
+    <app-product-alerts [producto]="producto" (notify)="onNotify()">
+    </app-product-alerts>
+</p-card>
+
+
+<p-dialog header="{{producto.name}}" [(visible)]="display">     Precio: {{producto.price}}
+  <img src="./assets/Phones/{{producto.images}}" width="100px" height="100px" alt="Sin imagen"> 
+  <button type="button" (click)="AgregarCart(producto)">Comprar</button> 
+   </p-dialog>

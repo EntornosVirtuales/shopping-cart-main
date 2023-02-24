@@ -1,0 +1,10 @@
+:host {
+    display: block;
+    height: 390px;
+    width: 250px;
+    border: 1px solid rgb(237, 255, 207);
+    border-radius: 15px;
+    box-shadow: 4px 4px rgb(237, 255, 207);
+    margin: 10px;
+    padding: 10px;    
+}
